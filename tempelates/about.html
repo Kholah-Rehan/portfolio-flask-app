@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/about-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">{{params.about_page}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2>Our Mission</h2>
+                        <p>At CodeThirst, we explore different projects to enhance our skills and lead to the efficient growth. We believe coding is a vital tool for creativity and problem-solving.</p>
+
+                        <h2>Who We Are?</h2>
+                        <p>CodeThirst is a platform where you can know about our exciting projects,we have something for everyone.</p>
+
+                        <h2>Join Us</h2>
+                        <p>explore our projects unlock the treasure in the world of coding. We’re here to support you every step of the way!
+</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% endblock %}        

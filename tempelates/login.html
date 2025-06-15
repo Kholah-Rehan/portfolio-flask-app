@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<main class="d-flex align-items-center justify-content-center min-vh-100.d-flex {
+    padding-left: 285px;
+    padding-right: 285px;
+}"> <!-- Centering the main content -->
+    <div class="text-center py-4 "> <!-- Adjusted padding: py-4 for top/bottom, px-3 for left/right -->
+        <form action="/dashboard" method="post">
+            <img class="mb-4 rounded-logo" src="{{ url_for('static', filename='assets/img/' + params.logo) }}" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Admin Login</h1>
+
+            <div class="form-floating mb-* border rounded" >
+                <input type="text" class="form-control" id="uname" name="uname" placeholder="email address" required autofocus>
+                <label for="uname">User name</label>
+            </div>
+            <div class="form-floating mb-* border rounded">
+                <input type="password" class="form-control" id="pass" name="pass" placeholder="Password" required>
+                <label for="pass">Password</label>
+            </div>
+
+            <div class="form-check text-start my-3">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-body-secondary">&copy;{{params['blog_name']}} 2017–2024</p>
+        </form>
+    </div>
+</main>
+<style>
+    .rounded-logo {
+        border: 2px solid black; 
+        border-radius: 50%; 
+        padding: 5px; /* Optional: space between the image and the border */
+        background-color: white; /* Optional: background color for the border */
+    }
+</style>
+
+{% endblock %}

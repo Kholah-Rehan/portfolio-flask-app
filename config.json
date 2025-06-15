@@ -1,0 +1,20 @@
+{
+  "params": {
+    "local_uri": "mysql+pymysql://root:@localhost/codingthirst",
+    "prod_uri": "mysql+pymysql://root:@localhost/codingthirst",
+    "fb_url": "https://facebook.com/codingthirst",
+    "tw_url": "https://twitter.com/codingthirst",
+    "gh_url": "https://github.com/codingthirst",
+    "blog_name": "Coding Thirst",
+    "tag_line": "A Blog Liked By Programmers!",
+    "user": "kholah",
+    "gmail_user": "khollahrehan12345@gmail.com",
+    "gmail_password": "expq ejzs paew kqxi",
+    "about_page": "Heaven For Programmers",
+    "no_of_post": 2,
+    "logo": "logo.jpg",
+    "admin_user": "kholah",
+    "admin_password": "sarah",
+    "upload_location": "C:\\Users\\PMLS\\PycharmProjects\\pythonProject11\\ragg\\static"
+  }
+}
